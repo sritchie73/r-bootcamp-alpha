@@ -1,35 +1,22 @@
 ---
 layout: bootcamp
 root: .
-venue: Euphoric State University
-address: 123 College Street, Euphoria
-country: United-States
-humandate: Feb 17-18, 2020
-humantime: 9:00 am - 4:30 pm
-startdate: 2020-06-17
-enddate: 2020-06-18
-latlng: 41.7901128,-87.6007318
+venue: Research Platforms Boardroom
+address: Level 3, Doug McDonell, The University of Melbourne
+country: Australia
+humandate: Sep 23, 2014
+humantime: 9:00 am - 5 pm
+startdate: 2014-09-23
+enddate: 2014-09-23
+latlng: -37.799080,144.962855
 registration: restricted
-instructor: ["Grace Hopper", "Alan Turing"]
-helper: ["John von Neumann"]
-contact: admin@software-carpentry.org
+instructor: ["Scott Ritchie"]
+contact: sritchie73@gmail.com
 ---
 <!--
     Edit the values in the parameter block above to be appropriate for your bootcamp.
     Please use three-letter month names for the 'humandate' field.
 -->
-
-<!-- Remove the block below. -->
-<div align="center">
-  <p><strong><em>
-      This page is a template for bootcamp home pages.
-      <br/>
-      Please see
-      <a href="//github.com/swcarpentry/bc">github.com/swcarpentry/bc</a>
-      for instructions on how to create
-      a repository for your bootcamp.
-  </em></strong></p>
-</div>
 
 <!--
     This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
@@ -73,7 +60,9 @@ contact: admin@software-carpentry.org
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  This bootcamp is a trial run of the R software carpentry materials, which will 
+  bring together experienced R users, potential helpers and instructors, and 
+  novice R users.
 </p>
 
 <!--
@@ -83,10 +72,6 @@ contact: admin@software-carpentry.org
 <p>
   <strong>Where:</strong>
   {{ page.address }}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
 </p>
 {% endif %}
 
@@ -95,8 +80,12 @@ contact: admin@software-carpentry.org
 -->
 <p>
   <strong>Requirements:</strong>
-  Participants must bring a laptop with a few specific software packages installed
-  (listed below).
+  Participants are asked to bring their laptop. They will be given access
+  to the <a href="https://its.unimelb.edu.au/research/our_services/cloud_computing/research_cloud">NeCTAR Research Cloud</a>
+  for the duration of the bootcamp (and beyond), so it's critical that this
+  laptop is able to connect to either the UniWireless or Eduroam wifi networks.
+  Since the NeCTAR Research Cloud has all the required software installed, 
+  participants are not required to install any software on their own laptop prior to the bootcamp.
 </p>
 
 <!--
@@ -120,31 +109,14 @@ contact: admin@software-carpentry.org
     Edit this block to show the schedule for your bootcamp.
 -->
 <h2>Schedule</h2>
-
-<div class="row-fluid">
-  <div class="span6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Building programs with Python</td> </tr>
-      <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-  <div class="span6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Version control with Git</td> </tr>
-      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Managing data with SQL</td> </tr>
-      <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-</div>
+<p>
+  The bootcamp will run from 9-4:30, and will be split into four sessions:
+  there will be two 15 minute coffe breaks at 10:30 and 14:30, and a one hour
+  lunch break at 1pm.
+</p>
+<p>
+  Tea and coffee will be provided, and microwaves are available.
+</p>
 
 <hr/>
 
@@ -152,66 +124,25 @@ contact: admin@software-carpentry.org
     Edit this block to show what topics will be covered.
 -->
 <h2>Syllabus</h2>
-
-<div class="row-fluid">
-  <div class="span6">
-    <h3>The Unix Shell</h3>
-    <ul>
-      <li>Files and directories: <code>pwd</code>, <code>cd</code>, <code>ls</code>, <code>mkdir</code>, ...</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things: <code>grep</code>, <code>find</code>, ...</li>
-      <li><a href="novice/ref/01-shell.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3>Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals: <code>for</code>, <code>if</code>, <code>else</code>, ...</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="novice/ref/03-python.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="row-fluid">
-  <div class="span6">
-    <h3>Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="novice/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="novice/ref/04-sql.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
-
+<p>
+The syllabus will teach the fundamentals of scientific programming, 
+covering the foundations of software development and design, via an 
+introduction to the R statistical programming language.
+</p>
+<p>
+The high level concepts this bootcamp subset will impart are <emph>defensive programming</emph>,
+<emph>error handling</emph>, <emph>debugging</emph>, <emph>unit testing</emph> and
+<emph>test-driven development</emph>. These skills are transferrable to any language.
+</p>
+<p>
+The bootcamp also seeks to cover the fundamentals of the R language, providing a
+solid foundation to learn from. R materials will be selected from the 
+<a href="https://github.com/swcarpentry/bc/blob/master/intermediate/r">
+  Software Carpentry intermediate R material
+</a>
+Ideally bootcamp attendees will have used R before, and want to learn more, 
+however complete novices are also welcome.
+</p>
 <hr/>
 
 <!--
@@ -220,13 +151,22 @@ contact: admin@software-carpentry.org
 -->
 
 <h2>Setup</h2>
-
 <p>
-  To participate in a Software Carpentry bootcamp, 
-  you will need working copies of the software described below.
-  Please make sure to install everything
-  (or at least to download the installers)
-  <em>before</em> the start of your bootcamp.
+Prior to the bootcamp, University of Melbourne staff/students should ensure
+that their laptop can connect to UniWireless. Instructions on how to do this
+and where to get assistance can be found
+<a href="https://its.unimelb.edu.au/help/networks-access/networks-internet/connect-wireless/unimelb">here</a>. 
+Attendees from other Australian universities should find out (from the IT 
+website of their home institution) how to connect to the Eduroam wireless 
+network.
+</p>
+<p>
+Since the bootcamp will be conducted on the NeCTAR Research Cloud, participants 
+are not required to install any software prior to the bootcamp. For those people
+who'd like to install the software used in the bootcamp on their own machine for
+use after the bootcamp, we've included the relevant installation instructions
+below (and we're happy to provide assistance with this during the bootcamp).
 </p>
 
 {% include setup.html %}
+
